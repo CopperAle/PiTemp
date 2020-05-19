@@ -1,0 +1,47 @@
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+    -webkit-text-size-adjust:none;
+    width:414;
+}
+
+body {
+    background: #cccccc;
+    color: #000088;
+    font-family: Arial, Helvetica, Sans-Serif;
+    margin:auto;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+td.center {
+    text-align:center;
+    text-align:-webkit-center;
+}
+
+td.bottom {
+    padding-bottom:100px;
+}
+
+h1 {
+  font-family: verdana;
+  font-size: 72px;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+h6 {
+  font-family: verdana;
+  font-size: 10px;
+}
