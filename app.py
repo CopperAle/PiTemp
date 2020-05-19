@@ -54,7 +54,7 @@ if __name__ == '__main__':
     background_thread.start()
     sleep(1)
     try:
-        app.run(debug = False, host = '0.0.0.0', port = 80, use_reloader = False)
+        app.run(debug = False, host = '0.0.0.0', port = 22222, use_reloader = False)
     except Exception as e:
         print (e)
         pass
