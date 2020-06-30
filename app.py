@@ -17,7 +17,7 @@ def piservers():
 
     i = 0
     while i < len(url):
-        url[i]=('http://pitemp' + str(pitemps[i]) + '/readings')
+        url[i]=('http://PiTemp-' + str(pitemps[i]) + '/readings')
         i += 1
 
     return url
@@ -46,15 +46,15 @@ def background():
 
 background_thread = threading.Thread(target = background)
 
+background_thread.start()
+
 @app.route('/')
 def index():
     return render_template('index.html', **pitempdata)
 
 if __name__ == '__main__':
-    background_thread.start()
-    sleep(1)
     try:
-        app.run(debug = False, host = '0.0.0.0', port = 22222, use_reloader = False)
+        app.run(debug = False, host = '0.0.0.0', port = 8080, use_reloader = False)
     except Exception as e:
         print (e)
         pass
